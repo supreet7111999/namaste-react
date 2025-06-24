@@ -11,7 +11,7 @@
 
 # package-lock.json keeps the track of exact ver. of the # package/dependency 
 
-# node_modules contains all the code of the packages .
+# node_modules contains all the code of the packages/collection of dependency .
 
 # one package is dependent on other packages , this is #  called transient/transtive dependency
 
