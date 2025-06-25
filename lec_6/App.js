@@ -37,3 +37,8 @@ root.render(<jsxHeading/>);
 
 //while rendering a functional component it should be usead as a html tag
 
+
+
+// cross site scripting attack - 
+// const data=axios.getData(); // suppose data is some js coming from api
+// {data}  // then data (js) will get the browser access and execute js code . this is called ...
