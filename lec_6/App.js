@@ -6,8 +6,11 @@ const head=React.createElement("h1",
 "Hello King from React !");
 
 //JSX - HTML like syntax not html
-const jsxHeading=(
+const =(
+    <>
   <h1>Rish is king</h1>
+  <headingF/>
+  </>
   )
 //jsx is just a syntax to create react element .
 // jsx is diff. react is diff
@@ -18,7 +21,7 @@ const jsxHeading=(
 // we use camelcase while writing attributes in jsx.
 // while writing jsx in multiple lines , we need to wrap it in ( JSXCode )
 const root=ReactDOM.createRoot(document.getElementById("root"));
-root.render(<headingF/>);
+root.render(<jsxHeading/>);
 
 //while rendering a functional component it should be usead as a html tag
 
