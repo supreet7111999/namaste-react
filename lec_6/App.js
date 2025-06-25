@@ -1,12 +1,14 @@
 import React from "react";
 import ReactDOM  from "react-dom/client"
-
+import {headingF} from "./AppReact"
 const head=React.createElement("h1",
 {id:"heading",xyz:"abc"},
 "Hello King from React !");
 
 //JSX - HTML like syntax not html
-const jsxHeading=<h1>Rish is king</h1>
+const jsxHeading=(
+  <h1>Rish is king</h1>
+  )
 //jsx is just a syntax to create react element .
 // jsx is diff. react is diff
 // abpve one is not a purely js , so what is happening in background is
@@ -16,5 +18,7 @@ const jsxHeading=<h1>Rish is king</h1>
 // we use camelcase while writing attributes in jsx.
 // while writing jsx in multiple lines , we need to wrap it in ( JSXCode )
 const root=ReactDOM.createRoot(document.getElementById("root"));
-root.render(jsxHeading);
+root.render(<headingF/>);
+
+//while rendering a functional component it should be usead as a html tag
 
