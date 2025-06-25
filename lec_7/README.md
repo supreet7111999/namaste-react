@@ -18,3 +18,6 @@
 
 # config driven ui :
 # our website is driven by config (controllig ui from data(config) coming from backend)
+
+# optional chaining :
+# res?.data?.name
