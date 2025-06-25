@@ -14,7 +14,7 @@
 
 # whenever a state variable updates , react re-render the component
 
-# why react fast 
+# why react fast because it is doing dom manipulation very fast (diff algo) 
  - it uses reconciliation (react-fiber)
  - virtual dom : it is representation (js  object) of acutual dom 
  - it finds out the diff. b/w the old virtual dom and new virtual dom , created after button click (ex. updation of list of restaurants) then it will update the dom based on that diff.
