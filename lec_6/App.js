@@ -6,12 +6,24 @@ const head=React.createElement("h1",
 "Hello King from React !");
 
 //JSX - HTML like syntax not html
-const =(
+
+const x=100;
+const y= <h3>This is React element</h3>
+const jsxHeading =()=>(
     <>
   <h1>Rish is king</h1>
+  <h2>{x}</h2>
+  {y}
   <headingF/>
   </>
   )
+
+// we can inject js in { js } in jsx.
+
+
+//Component composition -> when you composing two components into another is called ...
+
+
 //jsx is just a syntax to create react element .
 // jsx is diff. react is diff
 // abpve one is not a purely js , so what is happening in background is
