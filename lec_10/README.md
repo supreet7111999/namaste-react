@@ -59,3 +59,11 @@ const appRouter=createBrowserRouter([
         ]
     }
 ])
+
+# Creating Link (Nav)
+- never use an anchor tag , as it will make whole page to re-load.
+- will be using "Link" it just refreshes the components (i.e. single page website)
+
+import {Link} from "react-router-dom"
+
+<link to="/about">Home</Link >
