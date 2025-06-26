@@ -11,3 +11,6 @@ Ex - localhost:1234 -> UI
 # CORS Error 
 - our browser stopping us to call api from one origin to another.
 - solution : download cors extension
+
+# Shimmer UI
+- we load the fake page until we get the original ui rather than using spinner 
