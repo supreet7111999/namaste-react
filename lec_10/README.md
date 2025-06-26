@@ -29,3 +29,33 @@ const appRouter=createBrowserRouter([
 ])
 
 root.render(<RouterProvider router={appRouter} />);
+
+# children routes
+import {Outlet} from "React-router-dom";
+
+const AppLayout=()=>{
+    return (
+        <div className="root">
+          <Header>
+          <Outlet>
+        </div>
+    )
+}
+
+const appRouter=createBrowserRouter([
+    {
+        path:"/",
+        element: <AppLayout>,
+        errorElement: <Error>  // this will show Error page if wrong path
+        children: [
+        {
+         path:"/home",
+         element: <Home>
+        },
+        {
+         path:"/contact",
+         element: <Contact>
+        }    
+        ]
+    }
+])
