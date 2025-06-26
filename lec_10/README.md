@@ -6,3 +6,10 @@
 - it is called everytime ,any useState changes or render if no dependency array.
 - it is called only once if dependencyy array is blank.
 - it is called only when dependecy changes.
+
+# useState hook:
+-it is used for creating local state var.
+- it is must to create them in the body.
+- never create useState in if else , functions , for loop it cause inconsistency.
+- try to keep them at top in the body.
+
