@@ -13,3 +13,19 @@
 - never create useState in if else , functions , for loop it cause inconsistency.
 - try to keep them at top in the body.
 
+# react-router dom
+import {createBrowserRouter,RouterProvider} form "react-router-dom
+
+const appRouter=createBrowserRouter([
+    {
+        path:"/",
+        element: <AppLayout>,
+        errorElement: <Error>  // this will show Error page if wrong path
+    },
+    {
+        path:"/home",
+        element: <Home>
+    }
+])
+
+root.render(<RouterProvider router={appRouter} />);
