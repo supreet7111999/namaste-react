@@ -14,3 +14,4 @@ Ex - localhost:1234 -> UI
 
 # Shimmer UI
 - we load the fake page until we get the original ui rather than using spinner 
+
