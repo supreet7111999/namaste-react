@@ -1,0 +1,47 @@
+import React from "react";
+import ReactDOM  from "react-dom/client"
+import HeadingF from "./AppReact"
+import About from "./component/About";
+
+const head=React.createElement("h1",
+{id:"heading",xyz:"abc"},
+"Hello King from React !");
+
+//JSX - HTML like syntax not html
+
+const x=100;
+const y= <h3>This is React element</h3>
+const JsxHeading = ()=>(
+    <>
+  <h1>Rish is king</h1>
+  <h2>{x}</h2>
+  {y}
+  <HeadingF/>
+  <About/>
+  </>
+  )
+
+// we can inject js in { js } in jsx.
+
+
+//Component composition -> when you composing two components into another is called ...
+
+
+//jsx is just a syntax to create react element .
+// jsx is diff. react is diff
+// abpve one is not a purely js , so what is happening in background is
+// babel is converting(transpile ) the jsx to the format understood by browser i.e. js
+// JSX -> React.createElement -> ReactElement -> HTMLElement(render).
+// this process of conversion is done by babel
+// we use camelcase while writing attributes in jsx.
+// while writing jsx in multiple lines , we need to wrap it in ( JSXCode )
+const root=ReactDOM.createRoot(document.getElementById("root"));
+root.render(<JsxHeading/>);
+
+//while rendering a functional component it should be usead as a html tag
+
+
+
+// cross site scripting attack - 
+// const data=axios.getData(); // suppose data is some js coming from api
+// {data}  // then data (js) will get the browser access and execute js code . this is called ...
