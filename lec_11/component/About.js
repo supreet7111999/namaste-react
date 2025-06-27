@@ -78,3 +78,6 @@ export default About
 //  render(API Data)
 //  <HTML (new API datA)
 // componentDid Update
+
+// --Unmounting 
+// componentWillUnmount()
