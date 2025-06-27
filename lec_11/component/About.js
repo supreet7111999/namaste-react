@@ -81,3 +81,18 @@ export default About
 
 // --Unmounting 
 // componentWillUnmount()
+
+// Chunking/Code Splitting / Dynamic Bundling / Lazy Loading / on demand loading:
+// We need to make small bundle chunks , this is good for scaling our website.
+// We need to import lazy loading bundle using below code.
+// import Rect ,{lazy , suspense} from "react";
+//
+// const Grocery=lazy(()=>{
+//    import("./component/Grocery")
+// })
+// to handle or use GRocery use below:
+//
+// <Suspense fallback={<h1>Loading Groxery Page</h1>}><Grocery></Suspense>
+
+
+
