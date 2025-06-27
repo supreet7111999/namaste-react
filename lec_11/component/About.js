@@ -45,6 +45,36 @@ export default About
 //child2 didmount
 //parent didmount
 // goto react life cycle diag. to know in more detail
+// https://www.scholarhat.com/tutorial/react/react-lifecycle-methods
+
+//in componentdidmount we do api call. :
+// async componentDidMount(){
+//     const data=await fetch(url);
+//     const json=await data.json();
+//     this.setState({
+//         userInfo:json,
+//     });
+// }
+
+//lifecycle for data fectch:
+// mounting cycle finishes as component is mounted once .
+// now the updating cycle will begin:
+// goto lifecycle data.
+  // https://www.scholarhat.com/tutorial/react/react-lifecycle-methods
 
 
-//in componentdidmount we do api call. 
+
+// Lifecycle in detail
+
+// --Mounting--
+// constructor(dummy)
+//render (dummy)
+//   <HTML Dummy>
+// component didmount
+//   <API Call>
+//   <this.setState-> State var. are updated
+
+//---Update
+//  render(API Data)
+//  <HTML (new API datA)
+// componentDid Update
