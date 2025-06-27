@@ -32,3 +32,19 @@ export default About
 // child render
 //child didmount
 //parent didmount
+
+
+// if multiple userClass then order will be:
+//Parent cons
+//parent render
+//child1 cons
+//child1 ren
+//child2 cons
+//child2 ren
+//child1 didmount
+//child2 didmount
+//parent didmount
+// goto react life cycle diag. to know in more detail
+
+
+//in componentdidmount we do api call. 
