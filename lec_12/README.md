@@ -31,3 +31,12 @@ import C,A from a.js
 const B=C(A);
 
   condition ? <B props={pr}> : <A props={pr}>
+
+--------------------------------------------------------------------------------------------------------
+
+Each react component has 2 layers :
+1) UI Layer
+2) Data layer
+
+UI is powered by data layer.
+Data layer is like props , state and more.
