@@ -52,3 +52,47 @@ Data layer is like props , state and more.
 
 -"Lifting state up" in React is a pattern for managing shared state among multiple components. Instead of each component maintaining its own separate state, the shared state is moved to their closest common ancestor component. This ancestor then becomes the "single source of truth" for that particular piece of data. 
    
+
+--------------------------------------------------------------------------------------------------------
+
+# Props Drilling  using UseContext hook
+
+-- In UserContext.js
+
+import {createContext} from "react"
+
+export const UserContext =createContext({
+    name:"Supreet"
+})
+
+-- In Header.js
+
+import {useContext} from "react"
+import {UserContext} from "UserContext"
+
+const {name} =useContext(UserContext);
+
+# In class based component
+
+import {UserContext} from "UserContext"
+
+class X extends Component{
+    constructor(props){
+        super(props);
+        ...
+    }
+    render(){
+        return (
+            <div>
+              <div> Logged User NAme :</div>
+              <div>
+                <UserContext.Consumer>
+                  {(data)=>{data.name}}
+                </UserContext>
+               </div>
+             </div>     
+        )
+    }
+}
+
+
