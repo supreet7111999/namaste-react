@@ -40,3 +40,15 @@ Each react component has 2 layers :
 
 UI is powered by data layer.
 Data layer is like props , state and more.
+
+--------------------------------------------------------------------------------------------------------
+
+# Controlled and UnControlled Component.
+
+- Parent have the control over its children. (Ex- Making accordion for restaurant menu items.)
+- If child is controlled by parent then it is controlled component.
+
+# Lifting state up 
+
+-"Lifting state up" in React is a pattern for managing shared state among multiple components. Instead of each component maintaining its own separate state, the shared state is moved to their closest common ancestor component. This ancestor then becomes the "single source of truth" for that particular piece of data. 
+   
