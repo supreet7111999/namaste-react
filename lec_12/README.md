@@ -96,3 +96,23 @@ class X extends Component{
 }
 
 
+
+# Changing value of Context
+
+- In App.js
+
+import {UserContext} from "UserContext"
+import {useState} from 'react'
+
+const App=()=>{
+    const [name,setName] =useState("Rishu");
+    return (
+       <UserContext.Provide value={{name:name,setName}}>
+         <div>
+           ...
+         </div>
+       </UserContext>
+    )
+}
+
+-- Wecan update the data in context using useState, whenever we will change value using setName then name will also be update as it is binded to name(useState).
