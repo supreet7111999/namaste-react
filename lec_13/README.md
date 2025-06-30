@@ -17,3 +17,63 @@
 4) create slice
 5) Dispatch actions
 6) Selector
+
+- in appStore.js //build store
+
+import {configureStore} from "@reduc/toolkit"
+import cartReducer from "./cartSlice" 
+
+const appStore=configureStore({
+    reducer:{
+      cart:cartReducer,
+    },
+});
+
+export default appStore.
+
+
+- in app.js  // connect store to our app
+
+import {Provider} from "react-redux"
+import appStore from "appStore"
+
+...
+return (
+<Provider store={appStore}>
+  <UserContext>
+   <div> 
+     ...
+    </div> 
+  </UserContext>
+</Provider>
+)
+
+- in cartSlice.js //creating slice
+
+import {createSlice} from "@reducx/toolkit"
+
+const cartSlice=createSlice({
+    name:'cart',
+    initialState:{
+        items:[]
+    },
+    reducers:{
+        addItem : (state,action)=>{
+            state.items.push(action.payload);
+        },
+        removeItem: (state,action)=>{
+            state.items.pop();
+        },
+        clearCart: (state,action)=>{
+            state.items.length=0;
+        },
+    },
+});
+
+export const {addItem,removeItem,clearCart} = cartSLice.actions;
+
+export default cartSlice.reducer ; //exporting the reducer
+
+-in header.js //reading data .
+
+now follow notes .
