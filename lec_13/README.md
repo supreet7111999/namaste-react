@@ -83,3 +83,5 @@ const Header=()=>{
         <div> {cartItems.length}</div>
     )
 }
+
+# Note : Subscribe(useSelector) only to small required slice of a store because it will create huge performance loss
