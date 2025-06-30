@@ -9,3 +9,11 @@
 # Theory for reading data :
 -We will use selector and it will give us data.
 -Subscribing to the store means syncing with the stor i.e. when data in our slice will change then our UI will also change
+
+# Steps
+1) Install redux/toolkit and react-redux
+2) Build store
+3) Connect store to our app
+4) create slice
+5) Dispatch actions
+6) Selector
