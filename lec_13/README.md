@@ -75,5 +75,11 @@ export const {addItem,removeItem,clearCart} = cartSLice.actions;
 export default cartSlice.reducer ; //exporting the reducer
 
 -in header.js //reading data .
+import {useSelector} from "react-redux"
 
-now follow notes .
+const Header=()=>{
+    const cartItems=useSelector((state)=>state.cart.items);
+    return (
+        <div> {cartItems.length}</div>
+    )
+}
